@@ -763,3 +763,43 @@ button.tm-more-button {
 @media screen and (max-width: 370px) {
   .tm-welcome-content { margin-bottom: 60px; }
 }
+
+/* LOGIN BUTTON */
+.login-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:10px 25px;
+    background:linear-gradient(135deg,#c79c60,#e8be7b);
+    color:white !important;
+    text-decoration:none !important;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+    box-shadow:0 4px 15px rgba(199,156,96,.4);
+}
+
+.login-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(199,156,96,.6);
+}
+
+/* USER INFO */
+.user-badge{
+    background:white;
+    color:#8b5e3c;
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+    margin-right:15px;
+    display:inline-block;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+/* NAVBAR */
+.tm-nav{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
