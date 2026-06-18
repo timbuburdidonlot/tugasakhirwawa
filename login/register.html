@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angkringan 37 - Login</title>
+    <meta name="description" content="Animated gradient login form with card-tilt parallax, ripple effects and drifting particles.">
+    <meta name="author" content="Aigars Silkalns / Colorlib">
+    <link rel="canonical" href="https://puikinsh.github.io/login-forms/forms/gradient-wave/">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%236366f1'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='white' font-family='system-ui,sans-serif'>L</text></svg>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gradient Wave Login Form">
+    <meta property="og:description" content="Animated gradient login form with card-tilt parallax, ripple effects and drifting particles.">
+    <meta property="og:url" content="https://puikinsh.github.io/login-forms/forms/gradient-wave/">
+    <meta property="og:image" content="https://puikinsh.github.io/login-forms/assets/screenshots/gradient-wave.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gradient Wave Login Form">
+    <meta name="twitter:description" content="Animated gradient login form with card-tilt parallax, ripple effects and drifting particles.">
+    <meta name="twitter:image" content="https://puikinsh.github.io/login-forms/assets/screenshots/gradient-wave.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wave-container">
+        <div class="wave wave-1"></div>
+        <div class="wave wave-2"></div>
+        <div class="wave wave-3"></div>
+        <div class="wave wave-4"></div>
+    </div>
+
+    <div class="gradient-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="card-glow"></div>
+
+            <div class="login-header">
+                <div class="gradient-icon">
+                    <div class="icon-wave"></div>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+
+                <h2>Buat Akun</h2>
+                <p>Daftar Untuk Melanjutkan</p>
+            </div>
+
+            <form class="login-form" id="registerForm">
+
+                <div class="form-group">
+                    <div class="input-container">
+                        <div class="input-bg"></div>
+
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            required
+                            placeholder=" "
+                        >
+
+                        <label for="username">
+                            Nama Pengguna
+                        </label>
+
+                        <div class="input-wave"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-container">
+                        <div class="input-bg"></div>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder=" "
+                        >
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <div class="input-wave"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-container password-container">
+                        <div class="input-bg"></div>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                            placeholder=" "
+                        >
+
+                        <label for="password">
+                            Kata Sandi
+                        </label>
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                        >
+                            <div class="toggle-bg"></div>
+
+                            <div class="toggle-icon">
+
+                                <svg class="eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+
+                                <svg class="eye-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8"/>
+                                    <line x1="1" y1="1" x2="23" y2="23"/>
+                                </svg>
+
+                            </div>
+                        </button>
+
+                        <div class="input-wave"></div>
+                    </div>
+                </div>
+
+                <button
+                    type="submit"
+                    class="gradient-button"
+                >
+                    <div class="button-bg"></div>
+
+                    <div class="button-content">
+                        <span class="btn-text">
+                            Daftar
+                        </span>
+
+                        <div class="btn-loader">
+                            <div class="loader-wave"></div>
+                            <div class="loader-wave"></div>
+                            <div class="loader-wave"></div>
+                        </div>
+                    </div>
+
+                    <div class="button-ripple"></div>
+                </button>
+
+            </form>
+
+            <div class="signup-link">
+                <p>
+                    Sudah Punya Akun?
+                    <a href="login.html">
+                        Masuk
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+            <div class="success-message" id="successMessage">
+                <div class="success-wave"></div>
+                <div class="success-content">
+                    <div class="success-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <h3>Selamat Datang!</h3>
+                    <p>Redirecting to your dashboard...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../shared/js/form-utils.js"></script>
+    <script src="script.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
